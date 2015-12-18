@@ -1,0 +1,1 @@
+a:3:{s:14:"get_sql_cancel";i:0;s:13:"get_sql_table";s:0:"";s:18:"get_sql_percentage";i:0;}

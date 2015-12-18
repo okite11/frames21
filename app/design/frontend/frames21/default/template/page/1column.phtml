@@ -1,0 +1,245 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magento.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magento.com for more information.
+ *
+ * @category    design
+ * @package     rwd_default
+ * @copyright   Copyright (c) 2006-2014 X.commerce, Inc. (http://www.magento.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<?php
+/**
+ * Template for Mage_Page_Block_Html
+ */
+?>
+
+<!DOCTYPE html>
+
+<!--[if lt IE 7 ]> <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js"> <!--<![endif]-->
+
+<head>
+<?php echo $this->getChildHtml('head') ?>
+</head>
+<body<?php echo $this->getBodyClass()?' class="'.$this->getBodyClass().'"':'' ?>>
+<?php echo $this->getChildHtml('after_body_start') ?>
+<div class="wrapper">
+    <?php echo $this->getChildHtml('global_notices') ?>
+    <div class="page"><div class="main">
+        <?php echo $this->getChildHtml('header') ?>
+        
+        
+                <?php
+$routeName = Mage::app()->getRequest()->getRouteName();
+$identifier = Mage::getSingleton('cms/page')->getIdentifier();
+
+?>
+            <?php if($routeName == 'cms' && $identifier == 'home') {?>
+                    <div class="clear"></div>
+
+             <!-- Carousel
+    ================================================== -->
+ 
+ <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <!--<img src="<?php echo $this->getSkinUrl('images/bg-man-chair.png');?>" alt="First slide" class="pull-right">-->
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>$49.99 polycarbonate lense</h1>
+              <h2>with any frame purchase</h2>
+              <p>Purchase Single Vision Poly Carbonate Lenses with any purchase of glasses when available for $49.99. <br/>View individual product page for details. </p>
+<span class="misc-text">FREE SHIPPING AND FREE RETURNS</span>
+             <a class="btn btn-lg  btn-carousel" href="for-him.html" role="button" style="width: 158px;
+  padding-right: 39px;"><i class="fa fa-male
+             fa-fw"></i> Shop Men</a> <a class="btn btn-lg btn-carousel" href="for-her.html" role="button"><i class="fa fa-female fa-fw"></i> Shop Women</a>
+            </div>
+          </div>
+        </div>      
+      </div>
+    </div><!-- /.carousel -->
+
+        <div class="clear"></div>
+
+
+    <div class="main-content-bg ">
+   <?php echo $this->getChildHtml('global_notices') ?>
+     <?php echo $this->getChildHtml('global_messages') ?>
+         <div class="container">
+         
+         <div class="find-my-glasses"><span><i class="fa fa-eye fa-fw"></i> Find Your Style</span></div>
+
+                        <?php echo $this->getLayout()->createBlock('catalogsearch/advanced_form')->setTemplate('catalogsearch/advanced/form-home.phtml')->toHtml(); ?>
+
+<div class="fet-products"><span><i class="fa fa-thumbs-up fa-fw"></i> Featured Products</span></div>
+
+    <?php echo $this->getChildHtml('content') ?>
+    </div>
+    </div>
+    
+    
+    
+    <div class="container recommended-products-container">
+        <div class="clear"></div>
+
+          <div class="fet-products"><span><i class="fa fa-star fa-fw"></i> recommended for you</span></div>
+          
+                                 <?php echo $this->getLayout()->createBlock('catalog/product_list')->setCategoryId(10)->setTemplate('catalog/product/list-home-rec.phtml')->toHtml(); ?>
+
+          
+        
+          
+                      <div class="category-products">
+  
+    
+    
+
+</div>
+          
+          </div>
+
+<?php } else  { ?>
+
+  <?php if($identifier == 'homenew') {?>
+  
+   
+<div class="content">
+ <section class="style">
+   <?php echo $this->getChildHtml('global_notices') ?>
+     <?php echo $this->getChildHtml('global_messages') ?>
+         <div class="container">
+         
+         <div class="row">
+          <div class="col-md-12 pad_none">
+            <div class="outer_h2">
+              <h2><img alt="eye" src="media/wysiwyg/images/img_01.png">Find your style</h2>
+            </div>
+            <!--outer_h2 ends--> 
+          </div>
+          <!--col ends--> 
+        </div>
+        <!--row ends-->
+<div class="select">
+          <div class="row">
+    <?php echo $this->getLayout()->createBlock('catalogsearch/advanced_form')->setTemplate('catalogsearch/advanced/form-home.phtml')->toHtml(); ?>
+
+  </div>  </div>
+    </div>
+   </section>
+  
+	
+	 
+<!-- featured products section -->
+<section class="featured_prod">
+<div class="container">
+
+<div class="row">
+          <div class="col-md-12 pad_none">
+            <div class="outer_h2">
+              <h2>Featured Products
+			  </h2>
+            </div>
+            
+          </div>
+         
+        </div>
+		<div class="products">
+<div class="row">
+<div class="col-md-12 pad_none">
+
+          
+                    <?php echo $this->getChildHtml('global_messages') ?>
+                    <?php echo $this->getChildHtml('content') ?>
+              
+            </div>
+        </div>
+		
+		
+		    </div>
+            </div>
+       </section>
+		
+		
+		<!-- category section -->
+		<section class="pick">
+       <div class="container">
+        <div class="row">
+	  <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('home-category')->toHtml(); ?>
+
+
+		 </div>
+        </div>
+		   </section>
+		
+		<!-- category section end  -->
+		
+		
+		
+		<!-- brand section -->
+		
+		<section class="client_logo">
+<div class="container">
+<div class="row">
+ <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('home-brands')->toHtml(); ?>
+
+	 </div>
+        </div>
+		   </section>	
+		<!-- brand section end -->
+		</div>
+		    </div> <?php } ?>
+		 
+		 
+		 <!-- end home section -->
+    
+		</div>
+		
+		
+  <?php if($identifier != 'homenew') {?>
+  
+  <div class="main-container col1-layout">
+            <div class="main">
+                <?php echo $this->getChildHtml('breadcrumbs') ?>
+                <div class="col-main">
+                    <?php echo $this->getChildHtml('global_messages') ?>
+                    <?php echo $this->getChildHtml('content') ?>
+                </div>
+            </div>
+        </div>
+    <?php } ?>
+     <?php } ?>
+        
+        
+      
+   
+ 
+<?php echo $this->getChildHtml('footer_before') ?>
+<?php echo $this->getChildHtml('footer') ?>
+<?php echo $this->getChildHtml('global_cookie_notice') ?>
+<?php echo $this->getChildHtml('before_body_end') ?>
+<?php echo $this->getAbsoluteFooter() ?>
+    </div>
+</div>   
+</body>
+</html>
+

@@ -1,0 +1,133 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magento.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magento.com for more information.
+ *
+ * @category    design
+ * @package     rwd_default
+ * @copyright   Copyright (c) 2006-2014 X.commerce, Inc. (http://www.magento.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+/**
+ * @var Mage_Page_Block_Html_Header $this
+ */
+?>
+
+<div class="header-language-background">
+    <div class="header-language-container">
+        <div class="store-language-container">
+            <?php echo $this->getChildHtml('store_language') ?>
+        </div>
+
+        <?php echo $this->getChildHtml('currency_switcher') ?>
+
+               <p class="welcome-msg pull-left"><?php
+        if ($this->helper('customer')->isLoggedIn() ) {
+   		 echo "Welcome ".$this->helper('customer')->getCustomer()->getName();
+		} else {
+   		 echo "Welcome Guest! &nbsp; <a href=\"".$this->getUrl('customer/account/login')."\">Sign In</a> or <a href=\"".$this->getUrl('customer/account/create')."\">Create Account</a>";
+		}
+		echo $this->getAdditionalHtml();
+		?></p>
+        
+          <ul class="glasses-top-menu pull-right">
+        <li><a href="<?php echo $this->getUrl('wishlist'); ?>">My Wish List</a></li>
+        <li><a href="<?php echo $this->helper('customer')->getAccountUrl(); ?>">My Account</a></li>
+        <li><a href="<?php echo $this->getUrl('checkout/cart/'); ?>">Shopping Cart</a></li>
+        <li><a href="<?php echo $this->getUrl('checkout'); ?>">Checkout</a></li>
+        </ul>
+        
+    </div>
+</div>
+
+
+
+<header id="header" class="page-header">
+    <div class="page-header-container">
+        <a class="logo" href="<?php echo $this->getUrl('') ?>">
+            <img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" class="large" />
+            <img src="<?php echo $this->getLogoSrcSmall() ?>" alt="<?php echo $this->getLogoAlt() ?>" class="small" />
+        </a>
+        
+        
+        <div class="pull-left" style="margin-left:130px; margin-top:20px; margin-bottom:20px;">
+          <span class="fa-stack fa-lg">
+  <i class="fa fa-circle fa-stack-2x"></i>
+  <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+</span> <span class="top-phone">Call Us: (800) 269-4149</span>
+</div>
+</div>
+</header>
+
+   <div id="header-nav" class="skip-content">
+            <?php echo $this->getChildHtml('topMenu') ?>
+        </div>
+        
+<header class="page-header">
+
+   
+
+        <?php // In order for the language switcher to display next to logo on smaller viewports, it will be moved here.
+              // See app.js for details ?>
+        <div class="store-language-container"></div>
+
+        <!-- Skip Links -->
+
+        <div class="skip-links">
+            <a href="#header-nav" class="skip-link skip-nav">
+                <span class="icon"></span>
+                <span class="label"><?php echo $this->__('Menu'); ?></span>
+            </a>
+
+            <a href="#header-search" class="skip-link skip-search">
+                <span class="icon"></span>
+                <span class="label"><?php echo $this->__('Search'); ?></span>
+            </a>
+
+            <div class="account-cart-wrapper">
+              
+                
+                <!-- Cart -->
+
+                <div class="header-minicart">
+                    <?php echo $this->getChildHtml('minicart_head'); ?>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- Navigation -->
+
+  
+
+        <!-- Search -->
+
+        <div id="header-search" class="skip-content">
+            <?php echo $this->getChildHtml('topSearch') ?>
+        </div>
+
+        <!-- Account -->
+
+        <div id="header-account" class="skip-content">
+            <?php echo $this->getChildHtml('topLinks') ?>
+        </div>
+</header>
+
+
+<?php echo $this->getChildHtml('topContainer'); ?>

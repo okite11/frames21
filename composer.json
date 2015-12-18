@@ -1,0 +1,15 @@
+{
+    "repositories": {
+        "0": {
+            "type": "composer",
+            "url": "http://packages.magento.com/"
+        },
+        "data-migration-tool": {
+            "type": "git",
+            "url": "https://github.com/magento/data-migration-tool-ce"
+        }
+    },
+    "require": {
+        "magento/data-migration-tool": "dev-master"
+    }
+}

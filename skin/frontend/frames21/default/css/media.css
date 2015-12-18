@@ -1,0 +1,281 @@
+@media only screen and (min-width: 992px) and (max-width: 1200px)
+ 
+{
+.navbar-inverse .navbar-nav > li > a {
+   padding: 0 31px 0 0;
+ }
+ .slider_img > img {
+   width: 100%;
+}
+.style samp {
+  margin: 0 9px 0 0;
+  }
+  .panel_img img {
+  width: 100%;
+}
+.panel-group .panel {
+  width: 21%;
+}
+.panel-group {
+   text-align: center;
+}
+.client_logo li {
+   width: 16%;
+}
+footer .footer_nav li {
+   margin: 0 18px;
+  }
+  footer .sc_icons {
+  width: 47%;
+}
+}
+
+
+@media only screen and (min-width: 767px) and (max-width: 991px) 
+
+{
+	.pick h2 {
+   font-size: 16px;
+  }
+.navbar-inverse .navbar-nav > li > a {
+  color: #000;
+  font-size: 11px;
+  padding: 0 14px 0 0;
+  }
+.slider_img > img {
+   width: 100%;
+}
+.slider h2 {
+  font-size: 22px;
+}
+.slider h3 {
+  font-size: 18px;
+ }
+ .slider_txt {
+  padding: 39px 0 0 35px;
+  }
+  .style samp {
+    width: 11%;
+}
+.panel_img img {
+  width: 100%;
+}
+.panel-group {
+   text-align: center;
+}
+.panel-group .panel {
+    width: 28%;
+}
+.client_logo li {
+   width: 14%;
+}
+.client_logo li img{ width:100%;}
+footer .footer_nav li {
+    margin: 0 7px;
+  }
+  footer .footer_nav a {
+  font-size: 11px;
+}
+footer .sc_icons {
+   width: 62%;
+}
+}
+
+@media only screen and (min-width: 640px) and (max-width: 766px) 
+{
+.nav.navbar-nav {
+  padding: 0 41px; margin:0;
+}
+.pick h2 {
+  font-size: 16px;
+  }
+.nav > li {
+   margin: 0 0 9px;
+ }
+ .panel_img img {
+  width: 100%;
+}
+.panel-group {
+   text-align: center;
+}
+.panel-group .panel {
+    width: 28%;
+}
+.client_logo li {
+   width: 14%;
+}
+.client_logo li img{ width:100%;}
+.slider_img > img {
+   width: 100%;
+}
+.slider h2 {
+  font-size: 19px;
+}
+.slider h3 {
+  font-size: 18px;
+ }
+ .slider_txt {
+  padding: 39px 0 0 35px;
+  }
+  .style samp {
+   width: 30%;margin: 0 14px 11px 0;
+}
+.footer_nav ul {
+  text-align: center;
+}
+footer .sc_icons {
+  float: left;
+  margin: 16px 0 0;
+  width: 100%;
+}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 639px) 
+{
+.footer_nav ul {
+  text-align: center;
+}
+footer .sc_icons {
+  float: left;
+  margin: 16px 0 0;
+  width: 100%;
+}
+.panel-group .panel {
+  margin: 19px 17px !important;
+  width: 42%;
+}
+.pick li {
+  margin: 0 4px 7px 0;
+  width: 48%;
+}
+.pick h2 {
+  font-size: 16px;
+  }
+.client_logo li {
+   width: 13%;
+}
+footer .footer_nav li {
+    margin: 0 11px;
+ }
+.client_logo li img {
+  width: 100%;
+}
+footer {
+  margin: 29px 0 0;
+}
+.slider img {
+  width: 100%;
+}
+.slider h2 {
+  font-size: 16px;
+ }
+ .slider h3 {
+  font-size: 16px;
+  margin: 0;
+  padding: 6px 0 0;
+  }
+  .slider_txt {
+  padding: 21px 0 0;
+  }
+  .slider a {
+   font-size: 12px;
+  margin: 14px 0 0;
+  padding: 6px 7px;
+  }
+  .carousel-indicators{ display:none;}
+  .style samp {
+  margin: 0 14px 13px 0;
+  width: 20%;
+}
+.logo img {
+  width: 100%;
+}
+}
+
+
+@media only screen and (max-width: 479px) 
+{
+.footer_nav ul {
+  text-align: center;
+}
+footer .sc_icons {
+  float: left;
+  margin: 16px 0 0;
+  width: 100%;
+}
+.logo img {
+  width: 100%;
+}
+.cart {
+  padding: 30px 0 0;
+ }
+ .nav.navbar-nav {
+  box-sizing: border-box;
+  padding: 0 30px; margin:0;
+}
+header .search {
+ margin: 0 0 15px;
+ }
+ .slider img {
+  width: 100%;
+}
+.slider h2 {
+  font-size: 8px;
+ }
+ .slider h3 {
+  font-size: 8px;
+  margin: 0;
+  padding: 6px 0 0;
+  }
+  .slider_txt {
+  padding: 21px 0 0;
+  }
+  .slider a {
+   font-size: 9px;
+  margin: 14px 0 0;
+  padding: 6px 7px;
+  }
+  .carousel-indicators{ display:none;}
+  .style samp {
+  margin: 0 14px 12px 0;
+    width: 100%;
+}
+.panel-group .panel {
+  margin: 0 0 13px !important;
+    width: 100%;
+}
+.top_header p {
+  font-size: 9px;
+}
+.top_header .signin > p {
+  font-size: 8px;
+  margin: 0 2px;
+ }
+ .top_header .fa.fa-angle-down {
+  font-size: 13px;
+ }
+ .client_logo li {
+  width: 100%; margin:0;
+}
+ .client_logo li img{ width:auto;}
+ footer {
+  margin: 20px 0 0;
+}
+.client_logo a {
+  padding: 46px 0 0 17px;
+  }
+  footer .footer_nav li {
+    width: 50%;
+}
+.footer_bottom p {
+  font-size: 9px;
+ }
+ .pick li {
+   width: 100%; margin:0 0 5px;
+}
+.pick h2 {
+   font-size: 18px;
+  }
+}
+
+
